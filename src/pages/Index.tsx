@@ -41,12 +41,12 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section - Apple Style */}
+      {/* Hero Section - Apple Style with Western Ghats Nature Theme */}
       <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1600")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600")',
             filter: 'brightness(0.4)'
           }}
         />
@@ -117,8 +117,8 @@ const Index = () => {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800"
-                  alt="Natural farming"
+                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800"
+                  alt="Western Ghats natural farming"
                   className="rounded-3xl shadow-2xl"
                 />
               </div>
