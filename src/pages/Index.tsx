@@ -37,171 +37,163 @@ const Index = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: 'Priya Sharma',
-      text: 'The honey from Ista is absolutely pure! You can taste the difference in quality.',
-      rating: 5
-    },
-    {
-      name: 'Raj Kumar',
-      text: 'Best organic spices I have ever bought. The aroma and taste are incredible.',
-      rating: 5
-    },
-    {
-      name: 'Meera Patel',
-      text: 'Love the traditional pickles! Reminds me of my grandmother\'s recipes.',
-      rating: 5
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-green-50 to-yellow-50">
+      {/* Hero Section - Apple Style */}
+      <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1200")'
+            backgroundImage: 'url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1600")',
+            filter: 'brightness(0.4)'
           }}
         />
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-green-800 mb-6">
-            Pure. Natural. Traditional.
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-4">
+          <h1 className="text-7xl md:text-9xl font-serif font-light text-white mb-8 leading-none">
+            Ista
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Discover the authentic taste of nature with Ista's premium organic products, 
+          <p className="text-2xl md:text-3xl font-light text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Pure. Natural. Extraordinary.
+          </p>
+          <p className="text-lg md:text-xl text-gray-300 mb-16 max-w-2xl mx-auto font-light">
+            Discover the authentic taste of nature with premium organic products, 
             grown with traditional farming methods passed down through generations.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 py-3">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100 text-lg px-12 py-4 rounded-full font-medium">
               <Link to="/shop">Shop Now</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-50 text-lg px-8 py-3">
-              <Link to="/about">Our Story</Link>
+            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black text-lg px-12 py-4 rounded-full font-medium">
+              <Link to="/about">Learn More</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-16 bg-white">
+      {/* Featured Products - Minimal Grid */}
+      <section className="py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif font-bold text-green-800 mb-4">Featured Products</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Handpicked selection of our finest organic products, each telling a story of traditional farming and natural goodness.
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-serif font-light text-gray-900 mb-6">Our Collection</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
+              Handpicked selection of our finest organic products
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.map((product) => (
-              <Card key={product.id} className="group cursor-pointer hover:shadow-lg transition-shadow">
-                <CardContent className="p-0">
-                  <div className="relative overflow-hidden rounded-t-lg">
+              <div key={product.id} className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+                  <div className="aspect-square overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 text-xs rounded">
-                      {product.category}
-                    </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="font-semibold text-lg text-gray-800 mb-2">{product.name}</h3>
-                    <p className="text-green-600 font-bold text-xl">{product.price}</p>
-                    <Button asChild className="w-full mt-3 bg-green-600 hover:bg-green-700">
-                      <Link to={`/product/${product.id}`}>View Details</Link>
-                    </Button>
+                  <div className="p-8">
+                    <h3 className="font-serif text-2xl text-gray-900 mb-2 font-light">{product.name}</h3>
+                    <p className="text-green-600 font-medium text-lg">{product.price}</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
           
-          <div className="text-center mt-8">
-            <Button asChild variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-50">
+          <div className="text-center mt-16">
+            <Button asChild variant="outline" size="lg" className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-12 py-4 rounded-full">
               <Link to="/shop">View All Products</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Farming Practices */}
-      <section className="py-16 bg-green-50">
+      {/* Philosophy Section - Split Layout */}
+      <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-serif font-bold text-green-800 mb-6">Our Farming Philosophy</h2>
-              <p className="text-gray-700 text-lg mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800"
+                  alt="Natural farming"
+                  className="rounded-3xl shadow-2xl"
+                />
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-5xl md:text-6xl font-serif font-light text-gray-900 mb-8 leading-tight">
+                Our Philosophy
+              </h2>
+              <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
                 At Ista, we believe in harmony with nature. Our traditional farming methods preserve 
                 the earth's natural fertility while producing the highest quality organic products.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-white text-sm">✓</span>
-                  </div>
+              <div className="space-y-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mt-3"></div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">100% Organic</h3>
-                    <p className="text-gray-600">No chemicals, pesticides, or artificial additives</p>
+                    <h3 className="text-xl font-medium text-gray-900 mb-2">100% Organic</h3>
+                    <p className="text-gray-600 font-light">No chemicals, pesticides, or artificial additives</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-white text-sm">✓</span>
-                  </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mt-3"></div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Sustainable Methods</h3>
-                    <p className="text-gray-600">Traditional techniques that protect the environment</p>
+                    <h3 className="text-xl font-medium text-gray-900 mb-2">Sustainable Methods</h3>
+                    <p className="text-gray-600 font-light">Traditional techniques that protect the environment</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-white text-sm">✓</span>
-                  </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mt-3"></div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Fair Trade</h3>
-                    <p className="text-gray-600">Supporting local farmers and communities</p>
+                    <h3 className="text-xl font-medium text-gray-900 mb-2">Fair Trade</h3>
+                    <p className="text-gray-600 font-light">Supporting local farmers and communities</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600"
-                alt="Natural farming"
-                className="rounded-lg shadow-lg"
-              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-white">
+      {/* Testimonials - Minimal Cards */}
+      <section className="py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif font-bold text-green-800 mb-4">What Our Customers Say</h2>
-            <p className="text-gray-600">Real reviews from families who trust Ista for their natural food needs</p>
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-serif font-light text-gray-900 mb-6">What People Say</h2>
+            <p className="text-xl text-gray-600 font-light">Real reviews from families who trust Ista</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-6 text-center">
-                <CardContent className="p-0">
-                  <div className="flex justify-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="text-yellow-400 text-xl">★</span>
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
-                  <p className="font-semibold text-green-800">- {testimonial.name}</p>
-                </CardContent>
-              </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              {
+                name: 'Priya Sharma',
+                text: 'The honey from Ista is absolutely pure! You can taste the difference in quality.',
+                rating: 5
+              },
+              {
+                name: 'Raj Kumar',
+                text: 'Best organic spices I have ever bought. The aroma and taste are incredible.',
+                rating: 5
+              },
+              {
+                name: 'Meera Patel',
+                text: 'Love the traditional pickles! Reminds me of my grandmother\'s recipes.',
+                rating: 5
+              }
+            ].map((testimonial, index) => (
+              <div key={index} className="bg-white p-12 rounded-3xl shadow-sm">
+                <div className="flex text-yellow-400 mb-6 text-xl">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i}>★</span>
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-8 text-lg font-light leading-relaxed italic">"{testimonial.text}"</p>
+                <p className="font-medium text-gray-900 text-lg">— {testimonial.name}</p>
+              </div>
             ))}
           </div>
         </div>
