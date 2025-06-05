@@ -32,14 +32,6 @@ const Navigation = () => {
               Home
             </Link>
             <Link
-              to="/shop"
-              className={`${
-                isActive('/shop') ? 'text-green-600 border-b-2 border-green-600' : 'text-gray-700 hover:text-green-600'
-              } px-3 py-2 text-sm font-medium transition-colors`}
-            >
-              Shop
-            </Link>
-            <Link
               to="/about"
               className={`${
                 isActive('/about') ? 'text-green-600 border-b-2 border-green-600' : 'text-gray-700 hover:text-green-600'
@@ -89,13 +81,6 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
-              </Link>
-              <Link
-                to="/shop"
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-green-600 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Shop
               </Link>
               <Link
                 to="/about"

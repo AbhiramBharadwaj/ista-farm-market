@@ -41,12 +41,9 @@ const Index = () => {
             with gratitude in our hands and soil under our feet.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded-full">
               <Link to="/about">Our Story</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-green-800 text-lg px-8 py-4 rounded-full">
-              <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
         </div>
