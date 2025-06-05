@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -62,8 +61,7 @@ const Contact = () => {
                   <Mail className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-green-800 mb-2">Email Us</h3>
-                <p className="text-gray-600 mb-2">hello@ista-farms.com</p>
-                <p className="text-gray-600">orders@ista-farms.com</p>
+                <p className="text-gray-600 mb-2">info@istafarm.com</p>
               </CardContent>
             </Card>
 
@@ -73,8 +71,8 @@ const Contact = () => {
                   <MapPin className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-green-800 mb-2">Visit Our Farm</h3>
-                <p className="text-gray-600 mb-2">Ista Organic Farm</p>
-                <p className="text-gray-600">Western Ghats, Karnataka 576112</p>
+                <p className="text-gray-600 mb-2">Ista Farm</p>
+                <p className="text-gray-600">49/4, Taluk, near Shri Sevalal Temple<br />Lakkinakoppa, Nyamathi, Suragondanakoppa<br />Karnataka 577225</p>
               </CardContent>
             </Card>
 
@@ -196,7 +194,7 @@ const Contact = () => {
               <div className="w-full h-64 bg-green-100 rounded-lg mb-6 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="h-12 w-12 text-green-600 mx-auto mb-2" />
-                  <p className="text-green-800 font-medium">Western Ghats, Karnataka</p>
+                  <p className="text-green-800 font-medium">Near Shivamogga, Karnataka</p>
                   <p className="text-gray-600">Interactive map would go here</p>
                 </div>
               </div>
