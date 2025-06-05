@@ -3,45 +3,9 @@ import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { Leaf, Heart, Droplets, Sun } from 'lucide-react';
 
 const Index = () => {
-  const handmadeProducts = [
-    {
-      id: 'appemidi-pickle',
-      name: 'Appemidi Pickles',
-      description: 'Traditional handmade pickles with tender baby mangoes',
-      price: '₹450',
-      image: 'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400',
-      seasonal: 'Available March - June'
-    },
-    {
-      id: 'bird-eye-chilli',
-      name: 'Bird Eye Chilli Powder',
-      description: 'Fiery hot chilli powder ground fresh in small batches',
-      price: '₹320',
-      image: 'https://images.unsplash.com/photo-1583432664848-c4ac8b17c00e?w=400',
-      seasonal: 'Year-round harvest'
-    },
-    {
-      id: 'jackfruit-papad',
-      name: 'Jackfruit Papad',
-      description: 'Sun-dried crispy papads made from tender jackfruit',
-      price: '₹280',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400',
-      seasonal: 'Available April - August'
-    },
-    {
-      id: 'wild-honey',
-      name: 'Wild Forest Honey',
-      description: 'Raw unprocessed honey from our farm beehives',
-      price: '₹850',
-      image: 'https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?w=400',
-      seasonal: 'Harvested twice yearly'
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-stone-50">
       <Navigation />
@@ -51,7 +15,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1500673922987-e212871fec22?w=1600")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600")',
             filter: 'brightness(0.7)'
           }}
         />
@@ -72,54 +36,66 @@ const Index = () => {
           </p>
           
           <p className="text-lg md:text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Nestled in the heart of Shivamogga's fertile lands, our small organic farm 
-            follows the ancient rhythm of seasons, nurturing soil health and biodiversity 
-            through handmade processes and small-batch care.
+            What we grow, we eat. What we don't eat, we share.
+            Ista Farm isn't just a place — it's our way of living gently with the earth, 
+            with gratitude in our hands and soil under our feet.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 rounded-full">
-              <Link to="/shop">Taste Our Harvest</Link>
+              <Link to="/about">Our Story</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-green-800 text-lg px-8 py-4 rounded-full">
-              <Link to="/about">Our Story</Link>
+              <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Our Story Section */}
+      {/* Our Story Section - From Soil to Soul */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="flex items-center space-x-2 mb-6">
                 <Heart className="h-6 w-6 text-green-600" />
-                <span className="text-green-600 font-medium uppercase tracking-wide">Our Story</span>
+                <span className="text-green-600 font-medium uppercase tracking-wide">🌿 Our Story</span>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-8">
-                Where every seed tells a story
+                From Soil to Soul
               </h2>
               
               <div className="space-y-6 text-gray-700 leading-relaxed">
-                <p className="text-lg">
-                  What began as a dream to reconnect with the earth has blossomed into Ista Farm - 
-                  a 2.5-acre sanctuary where time moves at nature's pace and every harvest carries 
-                  the essence of our dedication.
+                <p className="text-lg font-medium text-green-700">
+                  What we grow, we eat. What we don't eat, we share.
                 </p>
                 
                 <p>
-                  Here in Shivamogga's embrace, we tend to our land like a garden, nurturing 
-                  biodiversity and soil health through generations-old wisdom. Our hands craft 
-                  each product in small batches, ensuring that what reaches your table carries 
-                  the authentic taste of seasonal abundance.
+                  We are a passionate farming couple growing a 2.5-acre chemical-free food forest near Shivamogga. 
+                  Our land may be small, but it's rich in life — filled with Appemidi mangoes, jackfruit, 
+                  premium avocados, bird eye chillies, white and black pepper, and many other native crops.
                 </p>
                 
                 <p>
-                  From the fiery Bird Eye chillies that dance in the morning sun to the sweet 
-                  jackfruits that ripen in monsoon's embrace, every element of our farm reflects 
-                  our commitment to pure, chemical-free practices.
+                  Everything we grow follows pure organic practices — no chemicals, no shortcuts. 
+                  We feed our soil with our own compost, desi cow dung, and natural microbe boosters 
+                  we've developed ourselves. Our focus is on soil health, biodiversity, and long-term care.
+                </p>
+                
+                <p>
+                  We don't just grow food — we make it with our hands. With help from our family, 
+                  we turn our harvest into honest, handmade products made in small, seasonal batches, 
+                  using only what the land gives — no factories, no mass production.
+                </p>
+                
+                <p className="text-lg font-medium text-green-700 italic">
+                  At Ista Farm, we believe "small is beautiful."
+                </p>
+                
+                <p className="text-gray-600">
+                  We may not produce a lot, but everything we do is filled with care — and meant to nourish, not just fill.
+                  Because for us, food is not a business.
                 </p>
               </div>
               
@@ -131,7 +107,7 @@ const Index = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600"
-                alt="Farmers with harvest baskets"
+                alt="Farming couple with harvest baskets"
                 className="rounded-2xl shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-green-600 text-white p-6 rounded-xl">
@@ -143,9 +119,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Handmade Products */}
+      {/* What We Craft */}
       <section className="py-20 bg-stone-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Sun className="h-6 w-6 text-amber-500" />
@@ -153,44 +129,63 @@ const Index = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-serif font-light text-gray-900 mb-6">
-              Seasonal Treasures
+              What We Craft
             </h2>
             
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Each product tells the story of its season, handcrafted in small batches 
-              when nature declares the perfect moment for harvest.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+              We turn our harvest into honest, handmade products — made in small, seasonal batches, 
+              using only what the land gives.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {handmadeProducts.map((product) => (
-              <Card key={product.id} className="group cursor-pointer bg-white border-0 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
-                <CardContent className="p-0">
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-2 mb-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      <span className="text-sm text-green-600 font-medium">{product.seasonal}</span>
-                    </div>
-                    <h3 className="font-serif text-xl text-gray-900 mb-2">{product.name}</h3>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">{product.description}</p>
-                    <p className="text-green-700 font-semibold text-lg">{product.price}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white rounded-full px-8">
-              <Link to="/shop">Explore All Products</Link>
-            </Button>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🌶️</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Spicy Bird Eye Chilli Powders</h3>
+              <p className="text-gray-600 text-sm">Fiery hot powders from our mountain-grown chillies</p>
+            </div>
+            
+            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🥭</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Traditional Appemidi Pickles</h3>
+              <p className="text-gray-600 text-sm">Tangy pickles made from tender baby mangoes</p>
+            </div>
+            
+            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🫓</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Jackfruit Papads</h3>
+              <p className="text-gray-600 text-sm">Sun-dried crispy papads from fresh jackfruit</p>
+            </div>
+            
+            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🫐</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Passion Fruit Pulp</h3>
+              <p className="text-gray-600 text-sm">Pure tropical passion fruit goodness</p>
+            </div>
+            
+            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🍯</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Wild Honey</h3>
+              <p className="text-gray-600 text-sm">Raw unprocessed honey from forest hives</p>
+            </div>
+            
+            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🌿</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Seasonal Spice Blends</h3>
+              <p className="text-gray-600 text-sm">Handcrafted blends from our spice garden</p>
+            </div>
           </div>
         </div>
       </section>
@@ -235,8 +230,8 @@ const Index = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Droplets className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Water Wisdom</h3>
-              <p className="text-gray-600 text-sm">Rainwater harvesting and mindful irrigation practices</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Natural Care</h3>
+              <p className="text-gray-600 text-sm">Using desi cow dung and our own microbe boosters</p>
             </div>
             
             <div className="text-center">
