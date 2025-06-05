@@ -70,19 +70,19 @@ const Index = () => {
                 
                 <p>
                   We are a passionate farming couple growing a 2.5-acre chemical-free food forest near Shivamogga. 
-                  Our land may be small, but it's rich in life — filled with Appemidi mangoes, jackfruit, 
-                  premium avocados, bird eye chillies, white and black pepper, and many other native crops.
+                  Our land may be small, but it's rich in life — filled with <strong>Appemidi mangoes</strong>, <strong>jackfruit</strong>, 
+                  premium <strong>avocados</strong>, <strong>bird eye chillies</strong>, white and black <strong>pepper</strong>, and many other native crops.
                 </p>
                 
                 <p>
-                  Everything we grow follows pure organic practices — no chemicals, no shortcuts. 
+                  Everything we grow follows pure <strong>organic practices</strong> — no chemicals, no shortcuts. 
                   We feed our soil with our own compost, desi cow dung, and natural microbe boosters 
                   we've developed ourselves. Our focus is on soil health, biodiversity, and long-term care.
                 </p>
                 
                 <p>
                   We don't just grow food — we make it with our hands. With help from our family, 
-                  we turn our harvest into honest, handmade products made in small, seasonal batches, 
+                  we turn our harvest into honest, <strong>handmade products</strong> made in small, seasonal batches, 
                   using only what the land gives — no factories, no mass production.
                 </p>
                 
@@ -104,8 +104,9 @@ const Index = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600"
-                alt="Farming couple with harvest baskets"
+                alt="Organic farming couple with harvest baskets at Ista Farm"
                 className="rounded-2xl shadow-xl"
+                loading="lazy"
               />
               <div className="absolute -bottom-6 -left-6 bg-green-600 text-white p-6 rounded-xl">
                 <p className="font-serif text-2xl font-light">2.5</p>
@@ -119,7 +120,7 @@ const Index = () => {
       {/* What We Craft */}
       <section className="py-20 bg-stone-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <header className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Sun className="h-6 w-6 text-amber-500" />
               <span className="text-green-600 font-medium uppercase tracking-wide">Handmade with Care</span>
@@ -133,56 +134,56 @@ const Index = () => {
               We turn our harvest into honest, handmade products — made in small, seasonal batches, 
               using only what the land gives.
             </p>
-          </div>
+          </header>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+            <article className="text-center bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🌶️</span>
+                <span className="text-2xl" role="img" aria-label="chili pepper">🌶️</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Spicy Bird Eye Chilli Powders</h3>
               <p className="text-gray-600 text-sm">Fiery hot powders from our mountain-grown chillies</p>
-            </div>
+            </article>
             
-            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+            <article className="text-center bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🥭</span>
+                <span className="text-2xl" role="img" aria-label="mango">🥭</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Traditional Appemidi Pickles</h3>
               <p className="text-gray-600 text-sm">Tangy pickles made from tender baby mangoes</p>
-            </div>
+            </article>
             
-            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+            <article className="text-center bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🫓</span>
+                <span className="text-2xl" role="img" aria-label="papad">🫓</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Jackfruit Papads</h3>
               <p className="text-gray-600 text-sm">Sun-dried crispy papads from fresh jackfruit</p>
-            </div>
+            </article>
             
-            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+            <article className="text-center bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🫐</span>
+                <span className="text-2xl" role="img" aria-label="passion fruit">🫐</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Passion Fruit Pulp</h3>
               <p className="text-gray-600 text-sm">Pure tropical passion fruit goodness</p>
-            </div>
+            </article>
             
-            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+            <article className="text-center bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🍯</span>
+                <span className="text-2xl" role="img" aria-label="honey">🍯</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Wild Honey</h3>
               <p className="text-gray-600 text-sm">Raw unprocessed honey from forest hives</p>
-            </div>
+            </article>
             
-            <div className="text-center bg-white p-8 rounded-2xl shadow-sm">
+            <article className="text-center bg-white p-8 rounded-2xl shadow-sm">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🌿</span>
+                <span className="text-2xl" role="img" aria-label="herbs">🌿</span>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Seasonal Spice Blends</h3>
               <p className="text-gray-600 text-sm">Handcrafted blends from our spice garden</p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -190,7 +191,7 @@ const Index = () => {
       {/* Farm Life Values */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <header className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Droplets className="h-6 w-6 text-blue-500" />
               <span className="text-green-600 font-medium uppercase tracking-wide">Farm Life</span>
@@ -204,40 +205,40 @@ const Index = () => {
               Like the scent of fresh soil after rain, our farming practices awaken the earth's 
               natural potential through mindful stewardship and patient care.
             </p>
-          </div>
+          </header>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
+            <article className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Leaf className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Soil Health</h3>
               <p className="text-gray-600 text-sm">Nurturing living soil through composting and natural amendments</p>
-            </div>
+            </article>
             
-            <div className="text-center">
+            <article className="text-center">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-8 w-8 text-amber-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Biodiversity</h3>
               <p className="text-gray-600 text-sm">Creating habitat for beneficial insects and native plants</p>
-            </div>
+            </article>
             
-            <div className="text-center">
+            <article className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Droplets className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Natural Care</h3>
               <p className="text-gray-600 text-sm">Using desi cow dung and our own microbe boosters</p>
-            </div>
+            </article>
             
-            <div className="text-center">
+            <article className="text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Sun className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Small Batches</h3>
               <p className="text-gray-600 text-sm">Handcrafted products with individual attention and care</p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
