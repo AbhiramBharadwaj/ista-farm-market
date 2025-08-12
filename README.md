@@ -1,73 +1,54 @@
-# Welcome to your Lovable project
+Ista Farm Market
+Empowering organic farmers with an online marketplace
 
-## Project info
 
-**URL**: https://lovable.dev/projects/96eb2b8a-6833-413e-94a0-0f4b768808e8
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+Overview
+The Ista Farm Market is an e-commerce platform dedicated to promoting organic farming and direct-to-consumer produce sales.
+It enables farmers to showcase their products, share their story, and connect with customers who value fresh, chemical-free food.
 
-**Use Lovable**
+Deployed on Vercel, the platform is optimized for speed, SEO, and responsive design, ensuring a smooth shopping experience across devices.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/96eb2b8a-6833-413e-94a0-0f4b768808e8) and start prompting.
+Features
+🛒 E-Commerce Functionality – Product listings, shopping cart, and checkout flow
 
-Changes made via Lovable will be committed automatically to this repo.
+📱 Responsive Design – Optimized for mobile, tablet, and desktop
 
-**Use your preferred IDE**
+🌱 Farmer Storytelling – Dedicated sections to highlight farm history, values, and sustainability practices
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+⚡ SEO Optimization – Improved discoverability with semantic HTML and meta tags
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+☁ Cloud Deployment – Hosted on Vercel for high availability and speed
 
-Follow these steps:
+Tech Stack
+Frontend: React, TypeScript, TailwindCSS, Vite
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+State Management: Local state + context API
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Deployment: Vercel
 
-# Step 3: Install the necessary dependencies.
-npm i
+SEO Tools: HTML meta tags, optimized headings, alt attributes
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+
+Installation
+
+# Clone the repository
+git clone https://github.com/AbhiramBharadwaj/ista-farm-market.git
+
+# Navigate into the project folder
+cd ista-farm-market
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Demo
+🔗 Live Website: istafarm.com
 
-**Use GitHub Codespaces**
+📸 Screenshots:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/96eb2b8a-6833-413e-94a0-0f4b768808e8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<img width="1920" height="950" alt="image" src="https://github.com/user-attachments/assets/10cb3553-c145-4684-9acd-d391a1c171e2" />
